@@ -5,3 +5,11 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.header-wrapper {
+  display: block;
+
+  nav {
+    display: inline-block;
+  }
+}
