@@ -13,6 +13,10 @@ class FrontPage extends Controller
      */
     public function images()
     {
-        return get_field('bg_image');
+        return [
+            'image' => get_field('bg_image'),
+            'title' => get_field('main_title'),
+            'subTitle' => get_field('sub_title'),
+        ];
     }
 }
