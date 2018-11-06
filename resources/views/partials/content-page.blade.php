@@ -4,7 +4,7 @@
 <div class="row hero">
     <div class="container">
         <div class="row">
-            <div class="theFakePseudo"><img class="whateverIcon" src="{{ get_field('bg_image')['sizes']['full'];}}" alt="It's an icon"></div>
+            <div class="theFakePseudo"><img class="whateverIcon" src="<?php echo get_field('bg_image')['sizes']['full'];?>" alt="It's an icon"></div>
             <div class="col">
                 <h1>{{ get_field('main_title') }}</h1>
 
