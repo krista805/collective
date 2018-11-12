@@ -16,7 +16,7 @@ class FrontPage extends Controller
         return [
             'image' => get_field('bg_image'),
             'title' => get_field('main_title'),
-            'subTitle' => get_field('sub_title'),
+            'subtitle' => get_field('sub_title'),
         ];
     }
 }

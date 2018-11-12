@@ -94,3 +94,19 @@
 </div>
 
 
+
+{{-- Text or Text Area --}}
+{{ get_field('text') }}
+
+{{-- Text or Text Area Unescaped --}}
+{!! get_field('textarea') !!}
+
+{{-- Repeater Content --}}
+@if (have_rows('showcase_slider'))
+  <ul>
+    @while(have_rows('showcase_slider')) @php(the_row())
+      <li>@php(the_sub_field('caption'))</li>
+    @endwhile
+  </ul>
+@endif
+
